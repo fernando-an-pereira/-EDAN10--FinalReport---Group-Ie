@@ -1,0 +1,127 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{verbatim}
+
+% Hypertext
+\usepackage{hyperref}
+
+%Bibliobraphy
+\usepackage{natbib}
+\usepackage{bibtopic}
+\usepackage{url}
+
+\usepackage[utf8]{inputenc} % Krävs för att svenska tecken ska läsas korrekt i vissa system.
+%\usepackage[latin1]{inputenc} % Om svenska tecken inte fungerar korrekt, försök att byta ut föregående rad mot denna (eller testa utan någon av raderna)
+
+%Allow the use of \verbatimtabinput which includes external files, and handling tabs correctly
+\usepackage{moreverb}
+\def\verbatimtabsize{4\relax} 
+
+\bibliographystyle{unsrt}
+
+%Remove red boxes due to the hyperref
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{EDAN10 -- Group I-e\\--\\ Synopsis \\
+Introduction of SCM in a company 
+%maybe add a better title
+}
+
+\author{Einar Holst \\
+Fernando de Andrade Pereira \\
+Hani Fakhouri
+}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+
+\section{Keywords}
+%introduce one keyword per line
+\begin{itemize}
+\item Software Configuration Managment Plan
+\item Simultaneous update
+\item Maintaining releases
+\item Versioning tools
+\item Configuration Item
+\item Change management
+\item Change Control Board
+\item Introducing Software Configuration Managment
+\end{itemize}
+
+
+\section{Topic}
+This paper discusses the introduction of SCM in a company (specifically the \emph{PonteVecchio Software}).
+
+The project can be considered quite relevant due to the increasing productivity of the corporation which it may gain by using a SCM tool.
+
+The main stakeholder of this project is the company management because their projects will be finished faster and as a result more products can be sold. This will also result in giving the company a chance to grow further without being interupted by the issues they are having today.
+
+The developers and testers of the company are identified as secondary stakeholders because they should agree with the changes in the company and are directly effected by these changes. As some of the issues the developers and testers are having are caused by the lack of configuration managment and adding support will reduce the stress level for the developers and testers and will increase the moral of the team, making it a more pleasant work environment.
+
+Other secondary stakeholders are costumers of this company. While not a direct stakeholder we have to consider, that their interests are effected by the work done in this project as it will increase the productivity of the company. Thus costumers will get a higher value back on their money and receive higher quality and lower delivery times.
+
+\section{Problem statement}
+A company (called \emph{PonteVecchio Software} or PVS for short) is a small software development company that has grown from 2 to 15 developers in the last 10 years. They have never introduced any form of configuration managment (CM for short) and are starting to notice that they have problems they can not quiet explain. They have heard that CM could help them with some of these problems and have requested a plan to introduce CM to the company in steps that will not disturbe their production but at the same time solve their issues.
+
+Currently the company works on their source code using a single network resource to and from which everyone reads and writes. This is likely to be the cause of one of the issues they have been having which is that code that has been done seems to disappear from time to time without a trace. This is commonly known as the \emph{simultaneous update} problem in CM and is normaly solved using suitable software tools.
+
+The simultaneous update problem that has been creeping into development has meant that the company has been forced to introduce a \emph{Waterfall method} of development that allows them dictate who can edit what files and when in order to minimize the problem. This in some ways might slow down production as delays in a single part of the plan set forward can cause chain reactions that delay the whole project.
+
+Another issue that they have because of the shared network resource is that they do not have the ability to maintain old releases that have been delivered to costumers. While a copy of what was delivered to the costumer is kept on a CD which was created at release. While this copy does exist it does not provide any benefit to the company other then the ability to make a copy of it and deliver it to clients again if it is lost.
+
+There is also an issue with that the company has no clear process for handling change requests which has resulted in some confusion among the employees. Mostly this happens when some interface or class changes how it is intended to be used or methods change name without the information that it will be changed or even has changed reaches all the developers.
+
+While some of these issues could be easily fixed the company managment has also decided that they want to use exclusivly free tools to do so. While not a major problem it is one extra consideration to take into account when solving the issues the company has presently.
+
+\section{Hypotheses}
+Software configuration management must be considered in all software projects and companies as it eases the general workflow and increases maintenance of different project parts. Well defined SCM activities and standards should be conducted upon applying SCM. As a result a good structured SCM plan should be used and set at the begining of every project in order to avoid unwanted problems in the future. A software company that does not use SCM might thus face many obstacles which results in more financial and technical costs, might decrease project general performance and delay the delievery of company's product. 
+
+This paper shall investigate and explain how SCM can be applied to a software company that does not use SCM at all. Main SCM parts that shall be introduced into the company are configuration identification, configuration change management and configuration quality assurance. The result of this work shall be a SCM plan that defines the standards that shall be used in the company. It is furthermore assumed that the company has never used SCM before but is willing to do so and the management is looking forward to apply different SCM practices. The company has encountered different management problems specially during development of its products and is aware of the severeness of such problems. These hard impacts made the company management decide to introduce SCM.
+
+\section{Method}
+To solve the problems the company is encountering we will start by studying how the developers work in detail. Futhermore we will analyse how the concurrent development is done. During this process different configuration items and artifacts will be identified.
+
+After we understand the working dynamics of the developers we have to decide what is the better versioning control tool to the company. A really important thing is that it has to be easily learned and accepted by the staff. As the tool has to be free, we considered, at the beginning, the three most popular VC Open Source tools: CVS, SVN and Git. However, the user interface of CVS is almost the same as SVN, and CVS is considered obsolete tool by many configuration managers, so we will consider just SVN and Git. As just a few hours are enough to learn the basic usage of this softwares, the developers will learn and try each tool for one week. We'll get the feedbacks and decide to which tool they adapted better to. We will analyse also the productivity in the periods. With these factors, we can decide what is the tool the developers shall study deeply and use in the production.
+
+Another important part is to construct a CM plan for the company. This plan will be used as basis to the company to every CM plan it will do to specific projects. This will act as a base mold for the company to use in all further development and can be edited to suit the company with the help of the suggested inhouse part time configuration manager. The plan will contain the identification of the configuration items, different standards that must be followed by the team and methods of change management.
+
+Some of the issues of the change control process could be solved by introducing a change control board that oversees changes and makes decissions on what should be added and what should not. Despite if all changes presented should be added the CCB could make sure that the information about the changes going into the system would reach all the effected developers to avoid the confusion it could cause.
+
+Finally the company will need a Configuration Manager. It can be a new employee, or a developer will be promoted to this function. As the company is somewhat small a full time configuration manager will not be needed and as such a part time configuration manager position should be considered. It is likely a good idea to select a senior developer who will take a course in configuration managment and act as a part developer and part configuration manager and as such will be available full time to answer questions and solve issues as they appear. This would provide greater support for the team then having a part time consultant who is the acting configuration manager that is not available when needed or a on call consultant which can be expensive.
+
+
+\newpage
+\appendix
+\section{Literature}
+
+The literature that will be used in this project is prioritized as primary -- most relevant to this work -- and secondary -- less relevant, but also important. 
+\begin{btSect}[alpha]{primary}
+\subsection{Primary}
+\btPrintAll
+\end{btSect}
+
+\begin{btSect}[alpha]{secondary}
+\subsection{Secondary}
+\btPrintAll
+\end{btSect}
+
+\end{document}
