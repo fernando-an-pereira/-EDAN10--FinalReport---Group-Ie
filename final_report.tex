@@ -96,6 +96,33 @@ While some of these issues could be easily fixed the company managment has also 
 
 \section{CM Plan}
 
+\subsection{Status Accounting}
+
+As in any management discipline, an accounting of status and activities is required for configuration management [4] and thus should be included in the SCM plan. Configuration status accounting is a management information system that provides for tracebility and status information within the CM process. It is a system of reports and records documenting CIs and baselines throughout the product lifecycle[4]. It is important to construct an information gathering mechanism, i.e. how the status accounting information is gathered. We would suggest that the different information should be entered into the CM database by the initiators of the SCM activities rather than by the CM manager, who if doing that, will end up chasing the activities and updating the status accounting data. The CM manager on the other hand will have an overall view of the information in the database and might request different updates from the initiators rather than chasing them. In order to make the above process as easy and as automated as possible well structured reports should be used by the team. These reports should be made so that they are easily traced. Such a report shall include date and time, unique and significant report number (version), title, initiator, status, priority, description, specification, CI location in the system and manager. We would ferthermore divide there reports into three categories which define in what context each report is created which are control, identification and documentation.
+
+The identification report inclde:
+\begin{itemize}
+  \item CI name and number
+  \item Status
+  \item Initiator (developer)
+  \item Requirement reference
+  \item Specification reference
+  \item Parentage (part of another document)
+  \item CI manager
+\end{itemize}
+
+The control report include:
+\begin{itemize}
+  \item Change number
+  \item Change title
+  \item Change class
+  \item Priority
+  \item Submission date
+  \item Implementation date
+  \item Verification date
+  \item Status
+\end{itemize}
+
 \section{SCM Tools}
 
 \section{Conclusion}
