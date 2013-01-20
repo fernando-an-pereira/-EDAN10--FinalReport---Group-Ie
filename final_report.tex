@@ -67,6 +67,10 @@ Hani Fakhouri
 \item Introducing Software Configuration Managment
 \end{itemize}
 
+\section{Abstract}
+
+\section{Introduction}
+
 
 \section{Topic}
 This paper discusses the introduction of SCM in a company (specifically the \emph{PonteVecchio Software}).
@@ -93,13 +97,13 @@ There is also an issue with that the company has no clear process for handling c
 While some of these issues could be easily fixed the company managment has also decided that they want to use exclusivly free tools to do so. While not a major problem it is one extra consideration to take into account when solving the issues the company has presently.
 
 \section{Education}
-Using a configuration management system whithin a development team is not easy, or very effective, if the whole team has not bought into it[11]. Therefore it is essential when introducing CM into the team to make sure that every member of the team is convinced of using CM and clearly understands the reasons of using it. To achieve that some kind of education needs to be done.
+Using a configuration management system whithin a development team is not easy, or very effective, if the whole team has not bought into it \cite{mikkelsen-pherigo}. Therefore it is essential when introducing CM into the team to make sure that every member of the team is convinced of using CM and clearly understands the reasons of using it. To achieve that some kind of education needs to be done.
 
 We make sure to explain why CM must be introduced. For example by listing all the software management related problems the team is experiencing (in a board) and then eventually showing how, when applying CM, each of these problems can be tackled and minimized or completely dissapear and be solved. Classical problems such as the simultaneous update and the shared data are good examples to show for the team and explain for it how they can be solved and the benefits of solving them. Furthermore the advantages of using CM must also be illustrated. Advanteages like increased productivity, better communication and coordination between the members, better code management, better change management and ofcourse better controll of the software being developed by the team. Showing some statistics of other teams productivity after introducing CM might be a good way to illustrate the importance of CM usage. Moreover it is important to explain to the team that all these benefits come with an extra work that should be done. That extra work might be seen as “extra” at the beginning but eventually it will become a part of the overall workflow. 
 
-After explaining the general concept of CM, its parts and the advantages of apllying CM a configuration manager should be chosen. Generally, a software configuration manager must have a solid base of training and/or practical experiences in at least one of two areas: software engineering and management[22].  We would suggest one of the developers who might volunteraly want to play this role or one of us who has a solid basic background in the area. Then the responsibilities and scope of authority of the CM manager must be explained. Responsibilities include development and/or administration of the SCM plan, review of the SCM plan, support of the CCB on software configuration control and management issues, providing status accounting reports to intreseted parties, serving as the interface between software engineering and software quality assurance and maintenance of software integrity[22]. All these responsibilities shall be clearly explained and should be fully understood by the person who shall act as the CM manager. 
+After explaining the general concept of CM, its parts and the advantages of apllying CM a configuration manager should be chosen. Generally, a software configuration manager must have a solid base of training and/or practical experiences in at least one of two areas: software engineering and management \cite{compton}.  We would suggest one of the developers who might volunteraly want to play this role or one of us who has a solid basic background in the area. Then the responsibilities and scope of authority of the CM manager must be explained. Responsibilities include development and/or administration of the SCM plan, review of the SCM plan, support of the CCB on software configuration control and management issues, providing status accounting reports to intreseted parties, serving as the interface between software engineering and software quality assurance and maintenance of software integrity \cite{compton}. All these responsibilities shall be clearly explained and should be fully understood by the person who shall act as the CM manager. 
 
-An important part of the education process is to run an in depth education of the SCM tool the team shall be using. As the team has never used such a tool it will be explained why the tool is needed and how it will improve the overall work process and the code management part. A good way to do that is to show the tool in live via a projector so that the team gets familiar with the tool UI. Different concepts of the SCM tool must also be explained. Concepts such as branching, merging, merge conflicts and different strategies on how to resolve these conflicts. Furthermore, we shall mention the different merging and branching concepts that exist. Because the team is relatively small we would recommend to use an early branching and relaxed merging styles. We would not need to explain all the styles that exist but just mention these so that the team is aware that different styles exist and they would know when to switch to the right strategy. A more concentrated and detailed demostration and explanation shall be applied on the strategy that will be used by the team. For example we shall explain that higher safety risk and less effort would mean a relaxed policy toward codelines and fewer integration. Linse. Less risk on the other hand implies stricter codeline policies, more codelines and more integration effort[1].
+An important part of the education process is to run an in depth education of the SCM tool the team shall be using. As the team has never used such a tool it will be explained why the tool is needed and how it will improve the overall work process and the code management part. A good way to do that is to show the tool in live via a projector so that the team gets familiar with the tool UI. Different concepts of the SCM tool must also be explained. Concepts such as branching, merging, merge conflicts and different strategies on how to resolve these conflicts. Furthermore, we shall mention the different merging and branching concepts that exist. Because the team is relatively small we would recommend to use an early branching and relaxed merging styles. We would not need to explain all the styles that exist but just mention these so that the team is aware that different styles exist and they would know when to switch to the right strategy. A more concentrated and detailed demostration and explanation shall be applied on the strategy that will be used by the team. For example we shall explain that higher safety risk and less effort would mean a relaxed policy toward codelines and fewer integration. Linse. Less risk on the other hand implies stricter codeline policies, more codelines and more integration effort \cite{mikkelsen-pherigo}.
 
 The education process shall be conducted for several days as it includes different and important parts which are assential to understand. The place and time of the educational meetings shall be properly chosen so that every member of the team can come and participate.
 
@@ -108,7 +112,7 @@ The education process shall be conducted for several days as it includes differe
 
 \subsection{Status Accounting}
 
-As in any management discipline, an accounting of status and activities is required for configuration management [4] and thus should be included in the SCM plan. Configuration status accounting is a management information system that provides for tracebility and status information within the CM process. It is a system of reports and records documenting CIs and baselines throughout the product lifecycle[4]. 
+As in any management discipline, an accounting of status and activities is required for configuration management \cite{daniels} and thus should be included in the SCM plan. Configuration status accounting is a management information system that provides for tracebility and status information within the CM process. It is a system of reports and records documenting CIs and baselines throughout the product lifecycle \cite{daniels}. 
 
 It is important to construct an information gathering mechanism, i.e. how the status accounting information is gathered. We would suggest that the different information should be entered into the CM database by the initiators of the SCM activities rather than by the CM manager, who if doing that, will end up chasing the activities and updating the status accounting data. The CM manager on the other hand will have an overall view of the information in the database and might request different updates from the initiators rather than chasing them. In order to make the above process as easy and as automated as possible well structured reports should be used by the team. These reports should be made so that they are easily traced. Such a report shall include date and time, unique and significant report number (version), title, initiator, status, priority, description, specification, CI location in the system and manager. We would ferthermore divide there reports into three categories which define in what context each report is created which are control, identification and documentation.
 
@@ -139,9 +143,9 @@ The control report include:
 
 By conductuing configuration audits the project verifies that the technical documentation matches and reflects product performance. Auditing is as essential part of CM and thus should also be included in the CM plan.
 
-It is important to diffirentiate between two types of audits, namely functional and physical configuration audits. Functional audits verify the functional characteristics while the physical audits verify th form and fir of the product. We would suggest to conduct functional audits in conjuction with integration testing as test data becomes available. During this functions audit, the CM manager shall review baseline documents, trace the product to its initial specifiaction, review status change and problem reports and compare test results to those of the requirements review[4]. 
+It is important to diffirentiate between two types of audits, namely functional and physical configuration audits. Functional audits verify the functional characteristics while the physical audits verify th form and fir of the product. We would suggest to conduct functional audits in conjuction with integration testing as test data becomes available. During this functions audit, the CM manager shall review baseline documents, trace the product to its initial specifiaction, review status change and problem reports and compare test results to those of the requirements review \cite{daniels}. 
 
- A mechanism on how to conduct an audit shall address the requirement (what is to be accomplished?), the preparation for the audit, coduct and followup process. Here checklists, which provide a script and ensure that nothing is left out, shall be used. We would suggest a simple checklist with a Yes No options for each data. Preparation process includes the establishment of the exact target for the audit and the definition of the data package (what documentation needs to be reviewed). This data package should be made available to all who will conduct the audit. The audit team would typically include a chairperson, a recorder, the CM manager and other members of the team selected on the basis of their special interests or knowledge. When all the above is ready the audit team meeting is scheduled and conducted. The data package is reviewed, assignments are made and procedures and checklists are also reviewed. The audit is then formally scheduled and announced, previously coordinated with the party to be audited. A final briefing with a review of responsibilities and checklists may be helpful. The audit begins with a meeting and the meeting is conducted by the chairperson. During the meeting an overview of the audit is given, the schedule and scenario is announced. Upon completion of the audit, the audit team meets seperately to discuss findings in order to prepare a report. Then official problem resolution action items are established. The most important part of the auditing process is the followup part[4]. When the final audit meeting is established, action items and report of findings should be published and distributed to all participants and to the management. When these items and findings are completed and resolved, the audit team reviews and verifies that the problems were actually resolved. Finally when all actions are closed, a final report is to be prepared. Necessary approvals and signatures need to be obtained. Then distribution and archiving is followed. For complete closure of the audit process it is important that the CM manager ensures that the configuration status accounting database has been updated with all required audit information.
+ A mechanism on how to conduct an audit shall address the requirement (what is to be accomplished?), the preparation for the audit, coduct and followup process. Here checklists, which provide a script and ensure that nothing is left out, shall be used. We would suggest a simple checklist with a Yes No options for each data. Preparation process includes the establishment of the exact target for the audit and the definition of the data package (what documentation needs to be reviewed). This data package should be made available to all who will conduct the audit. The audit team would typically include a chairperson, a recorder, the CM manager and other members of the team selected on the basis of their special interests or knowledge. When all the above is ready the audit team meeting is scheduled and conducted. The data package is reviewed, assignments are made and procedures and checklists are also reviewed. The audit is then formally scheduled and announced, previously coordinated with the party to be audited. A final briefing with a review of responsibilities and checklists may be helpful. The audit begins with a meeting and the meeting is conducted by the chairperson. During the meeting an overview of the audit is given, the schedule and scenario is announced. Upon completion of the audit, the audit team meets seperately to discuss findings in order to prepare a report. Then official problem resolution action items are established. The most important part of the auditing process is the followup part \cite{daniels}. When the final audit meeting is established, action items and report of findings should be published and distributed to all participants and to the management. When these items and findings are completed and resolved, the audit team reviews and verifies that the problems were actually resolved. Finally when all actions are closed, a final report is to be prepared. Necessary approvals and signatures need to be obtained. Then distribution and archiving is followed. For complete closure of the audit process it is important that the CM manager ensures that the configuration status accounting database has been updated with all required audit information.
 
 \section{SCM Tools}
 
@@ -154,21 +158,54 @@ Therefore, instead of impose only one solution to the company it's preferable to
 There're lots of SCM tools available in the market. However, \emph{PVS} requires that it shall be free.
 Another aspect, as the developers have little or no experience with SCM, it has to be easy to use.
 Between all the options, two very popular ones will be introduced to the company: \emph{SVN} and \emph{Git}.
-The developers will try between the two options and choose the best for them.
 
 \subsubsection{SVN}
 
+SVN is the sucessor of CVS, i.e., a \emph{version control tool} that use the main ideas of CVS, but with the fixing of the bugs and misfeatures \cite{collins-sussman}.
+
+The software
+
 \subsubsection{Git}
+
+Git, unlike SVN, isn't created as an evolution of CVS, it has a complete different concept.
+It was designed in 2005 to be used in the development of the Linux Kernel, and it's deeply inspired in the BitKeeper system, bringing aspects like speed, simple design, strong support for non-linear development, fully distributed and able to handle large projects like the Linux kernel efficiently \cite{chacon}.
+Since that, the system became very versatile, supporting another kinds of projects, not just the Linux Kernel, getting an increasingly user friendly interface and simpler commands.
+
+Git uses the long transaction model, i.e., the concurrency control system doesn't threat the changes in it file individually, but the change in the whole configuration. Each version of the system is a snapshot of all the files at that moment \cite{chacon}.
+
+Probably the biggest advantage of the Git to the developers of \emph{PVS} is that it has two repositories: a local repository and a remote repository.
+The local repository can be used as a personal codeline, that may be used when a subproject consists of tasks that will be done by only one developer \cite{appleton}.
+But it also includes a bit more difficulty, because a developer needs two steps (\emph{commiting} and then \emph{pushing}) to send the changes to the shared (remote) repository, and also it's different to work with local or remote branches (and tags): one shall explicitly indcate when it's working with the remote branch (tag). 
+Otherwise, it will affect the local branch (tag).
+
+The other advantages of the Git, as low network latency overhead (due to almost all operations in Git happen localy) and integrity (due a SHA-1 checksum of the files in the repository) \cite{chacon}, are also important, but they have smaller relevance, because all developers work in the same place, and access the remote repository using LAN, so the bandwidth is not a big problem, and the data in this repository is relatively safe, since only employees of the company use it -- surely it's not one hundred percent safe, but it's very near to it.
+
+Summing up, Git is a system with lots of recurses, much more than the SVN, but it is also more complex, and maybe this benefits don't worth the extra effort required to learn how to use it.
 
 \subsection{Evaluation method}
 
 The tools will be tried by one week each. 
-In the first day of the five days workweek, a brief course introducing the respective tool.
+In the first day of the five days workweek (Monday), a brief course introducing the respective tool.
 This course doesn't intend to be deep, just the basic use of the software will be teached, i.e., a short explanation of how it works and the commands needed to do simple tasks (\emph{diff}, \emph{commit}, \emph{update}, \emph{merge}).
 It will last three hours.
 During rest of the day and the other four days of the week, the team will use the tool in a real project.
 
+In the first week SVN will be introduced, and in the second week, Git.
+This order was choosen because of the simplicity of the SVN comparing with the Git.
 
+During this week, our team will be together with the development team to clarify doubts about the use of the tools in the respective week. 
+Our team will also analyse the impressions of the developers about the tools.
+At the end of the week, the developers will give a feedback where they will tell about the experience. 
+They will answer about:
+\begin{itemize}
+\item How easy is the tool to use (from 0 to 10)?
+\item How much they think this tool can increase the produtivity (from 0 to 10)?
+\item How much they are interested in learn more about the tool (from 0 to 10)?
+\end{itemize}
+They also will have a open question to tell another details about the trial.
+
+Having this results, our team will choose the tool with better evaluation to implement in the company. 
+The developers will get a deeply training in the chosen software.
 
 \section{Conclusion}
 
@@ -176,15 +213,13 @@ During rest of the day and the other four days of the week, the team will use th
 \appendix
 \section{Literature}
 
---------------------------
-Hani's relative references
-New references:
-[11]2a – Mikkelsen and Pherigo
-[22]5a – Compton
-[4] Daniels chapters 4&5
--------------------------
-
-
+%--------------------------
+%Hani's relative references
+%New references:
+%[11]2a – Mikkelsen and Pherigo
+%[22]5a – Compton
+%[4] Daniels chapters 4&5
+%-------------------------
 
 The literature that will be used in this project is prioritized as primary -- most relevant to this work -- and secondary -- less relevant, but also important. 
 \begin{btSect}[alpha]{primary}
