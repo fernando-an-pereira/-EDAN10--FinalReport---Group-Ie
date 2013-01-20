@@ -190,9 +190,9 @@ It is important to diffirentiate between two types of audits, namely functional 
 
 \section{SCM Tools}
 
-To introduce the SCM in the company, a SCM tool is needed.
+To introduce SCM in the company, a SCM tool is needed.
 The most important aspect in choosing a SCM tool is that the developer team must accept it.
-Therefore, instead of impose only one solution to the company it's preferable to introduce multiple likely choices and let the team opt which is the best.
+Therefore, instead of imposing only one solution to the company it's preferable to introduce multiple likely choices and let the team opt which is the best.
 
 \subsection{The tools}
 
@@ -212,22 +212,22 @@ Git, unlike SVN, isn't created as an evolution of CVS, it has a complete differe
 It was designed in 2005 to be used in the development of the Linux Kernel, and it's deeply inspired in the BitKeeper system, bringing aspects like speed, simple design, strong support for non-linear development, fully distributed and able to handle large projects like the Linux kernel efficiently \cite{chacon}.
 Since that, the system became very versatile, supporting another kinds of projects, not just the Linux Kernel, getting an increasingly user friendly interface and simpler commands.
 
-Git uses the long transaction model, i.e., the concurrency control system doesn't threat the changes in it file individually, but the change in the whole configuration. Each version of the system is a snapshot of all the files at that moment \cite{chacon}.
+Git uses the long transaction model, i.e., the concurrency control system doesn't treat the changes in it file individually, but the change in the whole configuration. Each version of the system is a snapshot of all the files at that moment \cite{chacon}.
 
-Probably the biggest advantage of the Git to the developers of \emph{PVS} is that it has two repositories: a local repository and a remote repository.
+Probably the biggest advantage of Git to the developers of \emph{PVS} is that it has two repositories: a local repository and a remote repository.
 The local repository can be used as a personal codeline, that may be used when a subproject consists of tasks that will be done by only one developer \cite{appleton}.
 But it also includes a bit more difficulty, because a developer needs two steps (\emph{commiting} and then \emph{pushing}) to send the changes to the shared (remote) repository, and also it's different to work with local or remote branches (and tags): one shall explicitly indcate when it's working with the remote branch (tag). 
 Otherwise, it will affect the local branch (tag).
 
-The other advantages of the Git, as low network latency overhead (due to almost all operations in Git happen localy) and integrity (due a SHA-1 checksum of the files in the repository) \cite{chacon}, are also important, but they have smaller relevance, because all developers work in the same place, and access the remote repository using LAN, so the bandwidth is not a big problem, and the data in this repository is relatively safe, since only employees of the company use it -- surely it's not one hundred percent safe, but it's very near to it.
+The other advantages of Git, is low network latency overhead (due to almost all operations in Git happen localy) and integrity (due a SHA-1 checksum of the files in the repository) \cite{chacon}, are also important, but they have smaller relevance, because all developers work in the same place, and access the remote repository using LAN, so the bandwidth is not a big problem, and the data in this repository is relatively safe, since only employees of the company use it -- surely it's not one hundred percent safe, but it's very near to it.
 
-Summing up, Git is a system with lots of recurses, much more than the SVN, but it is also more complex, and maybe this benefits don't worth the extra effort required to learn how to use it.
+Summing up, Git is a system with lots of recurses, much more than SVN, but it is also more complex, and maybe these benefits are not worth the extra effort required to learn.
 
 \subsection{Evaluation method}
 
-The tools will be tried by one week each. 
+The tools will be evaluated for one week each. 
 In the first day of the five days workweek (Monday), a brief course introducing the respective tool.
-This course doesn't intend to be deep, just the basic use of the software will be teached, i.e., a short explanation of how it works and the commands needed to do simple tasks (\emph{diff}, \emph{commit}, \emph{update}, \emph{merge}).
+This course doesn't intend to be deep, just the basic use of the software will be taught, i.e., a short explanation of how it works and the commands needed to do simple tasks (\emph{diff}, \emph{commit}, \emph{update}, \emph{merge}).
 It will last three hours.
 During rest of the day and the other four days of the week, the team will use the tool in a real project.
 
