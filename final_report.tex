@@ -69,13 +69,11 @@ Hani Fakhouri
 
 \section{Abstract}
 
-\section{Introduction}
-
 
 \section{Topic}
 This paper discusses the introduction of SCM in a company (specifically the \emph{PonteVecchio Software}).
 
-The project can be considered quite relevant due to the increasing productivity of the corporation which it may gain by using a SCM tool.
+The project can be considered quite relevant due to the increase in productivity the corporation may gain by using a SCM tool.
 
 The main stakeholder of this project is the company management because their projects will be finished faster and as a result more products can be sold. This will also result in giving the company a chance to grow further without being interupted by the issues they are having today.
 
@@ -117,28 +115,28 @@ The organization of the configuration management process should be described in 
 \subsubsection{The Configuration Manager}
 While it might seem natural that the configuration manager has responsibility when it comes to the configuration management what this implies is not obvious unless you happen to be an expert in the field. To detail some of these responsibilities and some of the authority the configuration manager has should be a part of the plan.
 
-When it comes to the question of how much authority does the configuration manager need the answer is simple. He/she needs enough authority to effectively complete all of the tasks needed. This does not mean they need authority directly over the developers as the configuration manager should not need to directly influence their work. They should however be able to request impact analyses\footnote{What an impact analyse is will be covered later in section \ref{CCB}} from them about changes. It should also be discussed that placing the configuration manager too high up in the hierarchy will also be negative as it makes it less accessible for the developers and they might turn to the wrong instance for advice about the configuration management process when they should in fact be directing those questions to the configuration manager. While this might not be a risk in this company as it only has 15 employees they still need to make sure to give him a high enough authority as mentioned before.\ref{daniels}
+When it comes to the question of how much authority does the configuration manager need the answer is simple. He/she needs enough authority to effectively complete all of the tasks needed. This does not mean they need authority directly over the developers as the configuration manager should not need to directly influence their work. They should however be able to request impact analyses\footnote{What an impact analyse is will be covered later in section \ref{CCB}} from them about changes. It should also be discussed that placing the configuration manager too high up in the hierarchy will also be negative as it makes it less accessible for the developers and they might turn to the wrong instance for advice about the configuration management process when they should in fact be directing those questions to the configuration manager.\cite{daniels} While this might not be a risk in this company as it only has 15 employees they still need to make sure to give him a high enough authority as mentioned before.
 
 \subsubsection{Change Control Board}\label{CCB}
 The change control board (\emph{CCB} for short) is the main interface between the configuration management side where the configuration manager has most of the control out to the project side where he/she has little to none actual enforcement power. 
 
-When it comes to the CCB there are two main actors who are a must. The first is the chairman who can be anyone but needs the authority to make decisions that effect the project in question and will not be over turned by a higher instance after the meeting. This means it is normally a project manager of some sort that holds the chairman position. The second is the secretary which is the configuration manager and holds the responsibility to make sure the information needed is collected and presented during the meeting. The information needed might contain why should the change be made and what needs to be done. This might also include a impact analysis of how the project and system will be effected by the change.
+When it comes to the CCB there are two main actors who are a must. The first is the chairman who can be anyone but needs the authority to make decisions that effect the project in question and will not be over turned by a higher instance after the meeting. This means it is normally a project manager of some sort that holds the chairman position. The second is the secretary which is the configuration manager and holds the responsibility to make sure the information needed is collected and presented during the meeting. The information needed might contain why should the change be made and what needs to be done. This might also include a impact analysis of how the project and system will be effected by the change.\cite{daniels}
 
-Other then these two there are members and specialists. Members are at every meeting and represent the major parts of the project and can provide the chairman with information about how a change will effect parts of the project. The last is specialists who provide expert opinions on delicate or complex matters.
+Other then these two there are members and specialists. Members, who represent the major parts of the project, are present at every meeting and can provide the chairman with information about how a change will effect parts of the project. The last is specialists who provide expert opinions on delicate or complex matters.
 
-As for this company which is fairly small in size the CCB meetings will change in effect. Where as a large company might have 15 members at these meetings and many levels of CCB meetings in a hierarchy this becomes redundant because this company only has 15 employees total. As such the CCB meetings would only need to involve project manager, configuration manager and the lead software engineer. Specialists could be included for special matters but this would likely be relatively rare. While it might seem like the lead software engineer could just as well be the chairman because there will be so little interaction with other parts of the company or other contractors. However the choices made might effect the deadlines and what will be delivered to costumers and as such the project manager will be needed in order to make sure these decisions do not get changed after the meeting.
+As for this company which is fairly small in size the CCB meetings will change in effect. Whereas a large company might have 15 members at these meetings and many levels of CCB meetings in a hierarchy this becomes redundant because this company only has 15 employees total. As such the CCB meetings would only need to involve project manager, configuration manager and the lead software engineer. Specialists could be included for special matters but this would likely be relatively rare. While it might seem like the lead software engineer could just as well be the chairman because there will be so little interaction with other parts of the company or other contractors. However the choices made might effect the deadlines and what will be delivered to costumers and as such the project manager will be needed in order to make sure these decisions do not get changed after the meeting.
 
 \subsection{Identification}
-The identification section deals with categorizing artefacts into groups that are handled in different ways. The first step of this identification is to decide if an artefact is to be considered an configuration item. The difference between a configuration item and a artefact is that configuration items need to be under configuration control while a artefact includes everything that get produced in a project, this includes e-mails and memos. This is not done to keep down the storage need but to keep the amount of information from getting out of hand. If everything is stored then finding the information that actually matters to the project might be lost under the massive amounts of information that do not contribute to the project.
+The identification section deals with categorizing artefacts into groups that are handled in different ways. The first step of this identification is to decide if an artefact is to be considered an configuration item. The difference between a configuration item and an artefact is that configuration items need to be under configuration control while an artefact includes everything that get produced in a project, this includes e-mails and memos. This is not done to keep down the storage need but to keep the amount of information from getting out of hand. If everything is stored then finding the information that actually matters to the project might be lost under the massive amounts of information that do not contribute to the project.
 
 \subsubsection{Naming convention}
 One way to manage the growing amount of information is to use a naming convention that is clear and easy to use to describe what a specific piece of information is related to. While there are many ways to do this some are more complicated then others and more detailed this does not necessarily add something this company needs. A common naming convention is to number items and categories. Much as the numbering convention used by the table of content in this document. Where the parents number precedes the number of the current item. This standard can be extended using example a colon followed by the version number of the item.
 
 \subsubsection{Baselines and releases}
-Another important aspect is to define how to establish baselines and releases that makes sure that releases are or baselines do not need a lot of bug fixes and corrections as this might be costly to correct. However it is assumed that the company has some experience with this as their current management would further increase these costs if a faulty release was made.
+Another important aspect is how you define and establish baselines and releases. This is to make sure that releases and baselines do not contain as many bugs as they might otherwise as this might be costly to correct. However it is assumed that the company has some experience with this as their current management would further increase these costs if a faulty release was made.
 
 \subsection{Control}
-The change process for how changes to configuration items and especially baselines and releases should be done. This was mentioned shortly in the section \ref{CCB}. However the process over all needs to be clearly defined and who does what and what information goes where.
+The change process includes how changes to configuration items and especially baselines and releases should be done. This was mentioned shortly in the section \ref{CCB}. However the process over all needs to be clearly defined and who does what and what information goes where.
 
 \subsubsection{Change request}
 Change requests should be the main way of changing a decision in the company and should go through the configuration manager to the change control board. How these change requests look and what should be in them falls to the configuration manager. However it is important to try and improve them based on feedback. They should however contain a few basic things such as:
@@ -155,7 +153,7 @@ If a change request gets approved it needs to be applied as well and this needs 
 
 As in any management discipline, an accounting of status and activities is required for configuration management \cite{daniels} and thus should be included in the SCM plan. Configuration status accounting is a management information system that provides for tracebility and status information within the CM process. It is a system of reports and records documenting CIs and baselines throughout the product lifecycle \cite{daniels}. 
 
-It is important to construct an information gathering mechanism, i.e. how the status accounting information is gathered. We would suggest that the different information should be entered into the CM database by the initiators of the SCM activities rather than by the CM manager, who if doing that, will end up chasing the activities and updating the status accounting data. The CM manager on the other hand will have an overall view of the information in the database and might request different updates from the initiators rather than chasing them. In order to make the above process as easy and as automated as possible well structured reports should be used by the team. These reports should be made so that they are easily traced. Such a report shall include date and time, unique and significant report number (version), title, initiator, status, priority, description, specification, CI location in the system and manager. We would ferthermore divide there reports into three categories which define in what context each report is created which are control, identification and documentation.
+It is important to construct an information gathering mechanism, i.e. how the status accounting information is gathered. We would suggest that the different information should be entered into the CM database by the initiators of the SCM activities rather than by the CM manager, who if doing that, will end up chasing the activities and updating the status accounting data. The CM manager on the other hand will have an overall view of the information in the database and might request different updates from the initiators rather than chasing them. In order to make the above process as easy and as automated as possible well structured reports should be used by the team. These reports should be made so that they are easily traced. Such a report shall include date and time, unique and significant report number (version), title, initiator, status, priority, description, specification, CI location in the system and manager. We would furthermore divide there reports into three categories which define in what context each report is created which are control, identification and documentation.
 
 The identification report inclde:
 \begin{itemize}
@@ -184,69 +182,77 @@ The control report include:
 
 By conductuing configuration audits the project verifies that the technical documentation matches and reflects product performance. Auditing is as essential part of CM and thus should also be included in the CM plan.
 
-It is important to diffirentiate between two types of audits, namely functional and physical configuration audits. Functional audits verify the functional characteristics while the physical audits verify th form and fir of the product. We would suggest to conduct functional audits in conjuction with integration testing as test data becomes available. During this functions audit, the CM manager shall review baseline documents, trace the product to its initial specifiaction, review status change and problem reports and compare test results to those of the requirements review \cite{daniels}. 
+It is important to diffirentiate between two types of audits, namely functional and physical configuration audits. Functional audits verify the functional characteristics while the physical audits verify the form and fit of the product. We would suggest to conduct functional audits in conjuction with integration testing as test data becomes available. During this functional audit, the CM manager shall review baseline documents, trace the product to its initial specifiaction, review status change and problem reports and compare test results to those of the requirements review \cite{daniels}. 
 
- A mechanism on how to conduct an audit shall address the requirement (what is to be accomplished?), the preparation for the audit, coduct and followup process. Here checklists, which provide a script and ensure that nothing is left out, shall be used. We would suggest a simple checklist with a Yes No options for each data. Preparation process includes the establishment of the exact target for the audit and the definition of the data package (what documentation needs to be reviewed). This data package should be made available to all who will conduct the audit. The audit team would typically include a chairperson, a recorder, the CM manager and other members of the team selected on the basis of their special interests or knowledge. When all the above is ready the audit team meeting is scheduled and conducted. The data package is reviewed, assignments are made and procedures and checklists are also reviewed. The audit is then formally scheduled and announced, previously coordinated with the party to be audited. A final briefing with a review of responsibilities and checklists may be helpful. The audit begins with a meeting and the meeting is conducted by the chairperson. During the meeting an overview of the audit is given, the schedule and scenario is announced. Upon completion of the audit, the audit team meets seperately to discuss findings in order to prepare a report. Then official problem resolution action items are established. The most important part of the auditing process is the followup part \cite{daniels}. When the final audit meeting is established, action items and report of findings should be published and distributed to all participants and to the management. When these items and findings are completed and resolved, the audit team reviews and verifies that the problems were actually resolved. Finally when all actions are closed, a final report is to be prepared. Necessary approvals and signatures need to be obtained. Then distribution and archiving is followed. For complete closure of the audit process it is important that the CM manager ensures that the configuration status accounting database has been updated with all required audit information.
+ A mechanism on how to conduct an audit shall address the requirement (what is to be accomplished?), the preparation for the audit, conduct and followup process. Here checklists, which provide a script and ensure that nothing is left out, shall be used. We would suggest a simple checklist with a Yes No options for each data. Preparation process includes the establishment of the exact target for the audit and the definition of the data package (what documentation needs to be reviewed). This data package should be made available to all who will conduct the audit. The audit team would typically include a chairperson, a recorder, the CM manager and other members of the team selected on the basis of their special interests or knowledge. When all the above is ready the audit team meeting is scheduled and conducted. The data package is reviewed, assignments are made and procedures and checklists are also reviewed. The audit is then formally scheduled and announced, previously coordinated with the party to be audited. A final briefing with a review of responsibilities and checklists may be helpful. The audit begins with a meeting and the meeting is conducted by the chairperson. During the meeting an overview of the audit is given, the schedule and scenario is announced. Upon completion of the audit, the audit team meets seperately to discuss findings in order to prepare a report. Then official problem resolution action items are established. The most important part of the auditing process is the followup part \cite{daniels}. When the final audit meeting is established, action items and report of findings should be published and distributed to all participants and to the management. When these items and findings are completed and resolved, the audit team reviews and verifies that the problems were actually resolved. Finally when all actions are closed, a final report is to be prepared. Necessary approvals and signatures need to be obtained. Then distribution and archiving is followed. For complete closure of the audit process it is important that the CM manager ensures that the configuration status accounting database has been updated with all required audit information.
 
 \section{SCM Tools}
 
-To introduce the SCM in the company, a SCM tool is needed.
+To introduce SCM in the company a SCM tool is needed.
 The most important aspect in choosing a SCM tool is that the developer team must accept it.
-Therefore, instead of impose only one solution to the company it's preferable to introduce multiple likely choices and let the team opt which is the best.
+Therefore, instead of imposing only one solution to the company it is preferable to introduce multiple choices and let the team opt which is the best.
 
 \subsection{The tools}
 
-There're lots of SCM tools available in the market. However, \emph{PVS} requires that it shall be free.
+There are lots of SCM tools available in the market. However, \emph{PVS} requires that it shall be free.
 Another aspect, as the developers have little or no experience with SCM, it has to be easy to use.
-Between all the options, two very popular ones will be introduced to the company: \emph{SVN} and \emph{Git}.
+Between all the options, two very popular tools will be introduced to the company: \emph{SVN} and \emph{Git}.
 
 \subsubsection{SVN}
 
 SVN is the sucessor of CVS, i.e., a \emph{version control tool} that use the main ideas of CVS, but with the fixing of the bugs and misfeatures \cite{collins-sussman}.
 
-The software
+The software was designed as client-server.
+It is not a good solution for distributed development, but this problem does not affect this company, since all the development is centralized in the company's server.
+
+In SVN, there is no difference in the way it implements \emph{branching} and \emph{tagging}.
+In the SVN file system, there is a directory called \emph{trunk}, another called \emph{branches} and another called \emph{tags}.
+Branching and tagging is executed copying the mainline (\emph{trunk}) or another branch or tag to a new path in \emph{branches} or \emph{tags} respectively.
+
+The major advantage of SVN is it's simple architecture and easy to use interface.
 
 \subsubsection{Git}
 
-Git, unlike SVN, isn't created as an evolution of CVS, it has a complete different concept.
-It was designed in 2005 to be used in the development of the Linux Kernel, and it's deeply inspired in the BitKeeper system, bringing aspects like speed, simple design, strong support for non-linear development, fully distributed and able to handle large projects like the Linux kernel efficiently \cite{chacon}.
+Git, unlike SVN, isn not created as an evolution of CVS, it has a complete different concept.
+It was designed in 2005 to be used in the development of the Linux Kernel, and it is deeply inspired in the BitKeeper system, bringing aspects like speed, simple design, strong support for non-linear development, fully distributed and ability to handle large projects like the Linux kernel efficiently \cite{chacon}.
 Since that, the system became very versatile, supporting another kinds of projects, not just the Linux Kernel, getting an increasingly user friendly interface and simpler commands.
 
-Git uses the long transaction model, i.e., the concurrency control system doesn't threat the changes in it file individually, but the change in the whole configuration. Each version of the system is a snapshot of all the files at that moment \cite{chacon}.
+Git uses the long transaction model, i.e., the concurrency control system doesn't treat the changes in it file individually, but the change in the whole configuration. Each version of the system is a snapshot of all the files at that moment \cite{chacon}.
 
-Probably the biggest advantage of the Git to the developers of \emph{PVS} is that it has two repositories: a local repository and a remote repository.
+Probably the biggest advantage of Git to the developers of \emph{PVS} is that it has two repositories: a local repository and a remote repository.
 The local repository can be used as a personal codeline, that may be used when a subproject consists of tasks that will be done by only one developer \cite{appleton}.
 But it also includes a bit more difficulty, because a developer needs two steps (\emph{commiting} and then \emph{pushing}) to send the changes to the shared (remote) repository, and also it's different to work with local or remote branches (and tags): one shall explicitly indcate when it's working with the remote branch (tag). 
 Otherwise, it will affect the local branch (tag).
 
-The other advantages of the Git, as low network latency overhead (due to almost all operations in Git happen localy) and integrity (due a SHA-1 checksum of the files in the repository) \cite{chacon}, are also important, but they have smaller relevance, because all developers work in the same place, and access the remote repository using LAN, so the bandwidth is not a big problem, and the data in this repository is relatively safe, since only employees of the company use it -- surely it's not one hundred percent safe, but it's very near to it.
+The other advantages of Git, is low network latency overhead (due to almost all operations in Git happen localy) and integrity (due a SHA-1 checksum of the files in the repository) \cite{chacon}, are also important, but they have smaller relevance, because all developers work in the same place, and access the remote repository using LAN, so the bandwidth is not a big problem, and the data in this repository is relatively safe, since only employees of the company use it -- surely it is not one hundred percent safe, but it is very near to it.
 
-Summing up, Git is a system with lots of recurses, much more than the SVN, but it is also more complex, and maybe this benefits don't worth the extra effort required to learn how to use it.
+Summing up, Git is a system with lots of recurses, much more than SVN, but it is also more complex, and maybe these benefits are not worth the extra effort required to learn.
 
 \subsection{Evaluation method}
 
-The tools will be tried by one week each. 
+The tools will be evaluated for one week each. 
 In the first day of the five days workweek (Monday), a brief course introducing the respective tool.
-This course doesn't intend to be deep, just the basic use of the software will be teached, i.e., a short explanation of how it works and the commands needed to do simple tasks (\emph{diff}, \emph{commit}, \emph{update}, \emph{merge}).
+This course doesn't intend to be deep, just the basic use of the software will be taught, i.e., a short explanation of how it works and the commands needed to do simple tasks (\emph{diff}, \emph{commit}, \emph{update}, \emph{merge}).
 It will last three hours.
 During rest of the day and the other four days of the week, the team will use the tool in a real project.
 
 In the first week SVN will be introduced, and in the second week, Git.
 This order was choosen because of the simplicity of the SVN comparing with the Git.
+Both tools will be introduced as command line tools.
 
 During this week, our team will be together with the development team to clarify doubts about the use of the tools in the respective week. 
 Our team will also analyse the impressions of the developers about the tools.
-At the end of the week, the developers will give a feedback where they will tell about the experience. 
-They will answer about:
+At the end of the week, the developers will give feedback about the experience. 
+They will answer the following questions:
 \begin{itemize}
 \item How easy is the tool to use (from 0 to 10)?
 \item How much they think this tool can increase the produtivity (from 0 to 10)?
 \item How much they are interested in learn more about the tool (from 0 to 10)?
 \end{itemize}
-They also will have a open question to tell another details about the trial.
+They will also have a open question to talk about other details about the trial.
 
 Having this results, our team will choose the tool with better evaluation to implement in the company. 
-The developers will get a deeply training in the chosen software.
+The developers will get a deeper training in the chosen software.
 
 \section{Conclusion}
 
@@ -254,7 +260,7 @@ The objective of this paper was to use the knowledge we have obtained from the c
 
 In the course of introducing CM we started by running educational sessions about CM and the benifits of applying CM, responsibilities of a CM manager and in depth usage of the SCM tool. We then designed a SCM plan that included a roadmap which should be used by the team. The plan included basic CM parts which are Organization, Identification, Control, Accounting and Auditing. The plan would be considered as a reference to the company management and software team. It briefly explained which coventions to use. Finally, we demostrated two SCM tools for the team and let them use each one and eventually evaluated which tool would best fit the teams needs.
 
-As the company we were working with is not a real one but a virtual company we had to make some assumptions. In real life it would ofcourse be much harder to perform the task we have done and would take a lot more time.      
+As the company we were working with is not a real one but a virtual company we had to make some assumptions. In real life it would of course be much harder to perform the task we have done and would take a lot more time. 
 
 \newpage
 \appendix
