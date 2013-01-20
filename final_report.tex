@@ -105,6 +105,47 @@ The education process shall be conducted for several days as it includes differe
 
 
 \section{CM Plan}
+One of the main responsibilities of the newly appointed configuration manager will be to provide a CM plan for each new project. This plan details the CM aspects of the project and details how, who and what should be done in different scenarios. While this is document normally differs between projects and companies some basics that should atleast be covered will be explained below and hints about how to set these up. 
+
+\subsection{Organization}
+The organization of the configuration management process should be described in detail to explain who is responsible for what and what they should do about it. This is to help make sure that things get done and get done right. Most of this responsibility falls to the configuration manager as he/she is the one who has general responsibility for the configuration management process. However the configuration manager does rarely make decisions that effect anything outside the CM process, this is left for the normal company hierarchy to decide.
+
+\subsubsection{The Configuration Manager}
+While it might seem natural that the configuration manager has responsibility when it comes to the configuration management what this implies is not obvious unless you happen to be an expert in the field. To detail some of these responsibilities and some of the authority the configuration manager has should be a part of the plan.
+
+When it comes to the question of how much authority does the configuration manager need the answer is simple. He/she needs enough authority to effectively complete all of the tasks needed. This does not mean they need authority directly over the developers as the configuration manager should not need to directly influence their work. They should however be able to request impact analyses\footnote{What an impact analyse is will be covered later in section \ref{CCB}} from them about changes. It should also be discussed that placing the configuration manager too high up in the hierarchy will also be negative as it makes it less accessible for the developers and they might turn to the wrong instance for advice about the configuration management process when they should in fact be directing those questions to the configuration manager. While this might not be a risk in this company as it only has 15 employees they still need to make sure to give him a high enough authority as mentioned before.\ref{daniels}
+
+\subsubsection{Change Control Board}\label{CCB}
+The change control board (\emph{CCB} for short) is the main interface between the configuration management side where the configuration manager has most of the control out to the project side where he/she has little to none actual enforcement power. 
+
+When it comes to the CCB there are two main actors who are a must. The first is the chairman who can be anyone but needs the authority to make decisions that effect the project in question and will not be over turned by a higher instance after the meeting. This means it is normally a project manager of some sort that holds the chairman position. The second is the secretary which is the configuration manager and holds the responsibility to make sure the information needed is collected and presented during the meeting. The information needed might contain why should the change be made and what needs to be done. This might also include a impact analysis of how the project and system will be effected by the change.
+
+Other then these two there are members and specialists. Members are at every meeting and represent the major parts of the project and can provide the chairman with information about how a change will effect parts of the project. The last is specialists who provide expert opinions on delicate or complex matters.
+
+As for this company which is fairly small in size the CCB meetings will change in effect. Where as a large company might have 15 members at these meetings and many levels of CCB meetings in a hierarchy this becomes redundant because this company only has 15 employees total. As such the CCB meetings would only need to involve project manager, configuration manager and the lead software engineer. Specialists could be included for special matters but this would likely be relatively rare. While it might seem like the lead software engineer could just as well be the chairman because there will be so little interaction with other parts of the company or other contractors. However the choices made might effect the deadlines and what will be delivered to costumers and as such the project manager will be needed in order to make sure these decisions do not get changed after the meeting.
+
+\subsection{Identification}
+The identification section deals with categorizing artefacts into groups that are handled in different ways. The first step of this identification is to decide if an artefact is to be considered an configuration item. The difference between a configuration item and a artefact is that configuration items need to be under configuration control while a artefact includes everything that get produced in a project, this includes e-mails and memos. This is not done to keep down the storage need but to keep the amount of information from getting out of hand. If everything is stored then finding the information that actually matters to the project might be lost under the massive amounts of information that do not contribute to the project.
+
+\subsubsection{Naming convention}
+One way to manage the growing amount of information is to use a naming convention that is clear and easy to use to describe what a specific piece of information is related to. While there are many ways to do this some are more complicated then others and more detailed this does not necessarily add something this company needs. A common naming convention is to number items and categories. Much as the numbering convention used by the table of content in this document. Where the parents number precedes the number of the current item. This standard can be extended using example a colon followed by the version number of the item.
+
+\subsubsection{Baselines and releases}
+Another important aspect is to define how to establish baselines and releases that makes sure that releases are or baselines do not need a lot of bug fixes and corrections as this might be costly to correct. However it is assumed that the company has some experience with this as their current management would further increase these costs if a faulty release was made.
+
+\subsection{Control}
+The change process for how changes to configuration items and especially baselines and releases should be done. This was mentioned shortly in the section \ref{CCB}. However the process over all needs to be clearly defined and who does what and what information goes where.
+
+\subsubsection{Change request}
+Change requests should be the main way of changing a decision in the company and should go through the configuration manager to the change control board. How these change requests look and what should be in them falls to the configuration manager. However it is important to try and improve them based on feedback. They should however contain a few basic things such as:
+\begin{itemize}
+\item What is the change?
+\item Why is the change needed?
+\item Who found the issue?
+\end{itemize}
+
+\subsubsection{Verification}
+If a change request gets approved it needs to be applied as well and this needs to be verified. How this is done needs to be specified in order to make sure when a change has actually been preformed.
 
 \subsection{Status Accounting}
 
@@ -156,7 +197,7 @@ Hani's relative references
 New references:
 [11]2a – Mikkelsen and Pherigo
 [22]5a – Compton
-[4] Daniels chapters 4&5
+[4] Daniels chapters 4\&5
 -------------------------
 
 
